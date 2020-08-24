@@ -1,0 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6000 !important;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+  padding: 0.7em 0 0.7em 0;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #38506d;
+}
+p {
+  margin: 0 0 1em 0;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+h3 {
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+  padding: 0.7em 0 0.9em 0;
+  line-height: 1.4em;
+  font-weight: 400;
+}
