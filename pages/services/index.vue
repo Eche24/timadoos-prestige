@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pa-0" style="background-color: #f7f7f7;" >
     <v-layout row wrap justify-center align-center fill-height>
       <v-flex xs12 sm11 md11 lg11>
         <ServiceHero />
@@ -15,6 +15,13 @@ export default {
   components: {
     ServiceHero,
     ServicesOffer,
-  },
+  }
+  ,
+   head () {
+    return {
+      title: '  Services',
+
+    }
+  }
 }
 </script>

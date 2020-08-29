@@ -1,13 +1,13 @@
 <template>
-  <v-card flat max-width="600" tile>
+  <v-card flat max-width="564" tile>
     <v-window v-model="onboarding" reverse>
       <v-window-item v-for="card in cards" :key="card.title">
-        <v-card flat width="600">
+        <v-card flat width="600" height="400">
           <!-- <v-row class="fill-height text-center pa-2" align="center" justify="center" > -->
           <v-img class="white--text align-end text-center" height="250px" :src="card.img">
-            <h3>{{card.title}}</h3>
           </v-img>
           <v-card-text>
+            <h3>{{card.title}}</h3>
             <p>{{card.info}}</p>
           </v-card-text>
           <!-- </v-row> -->
@@ -56,7 +56,7 @@ export default {
         title: 'networking',
         info:
           'computer based tesing, call centres intercom phones, VoLP, fibre optic, VSAT installation',
-          img: 'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872582/timadoos/project-3_wl8zzo.png'
+          img: 'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598731129/timadoos/timadoo-2_bocgah.jpg'
       },
       {
         title: 'internet services',
@@ -94,10 +94,10 @@ h3 {
   line-height: 1.4em;
   font-weight: 400;
   text-transform: uppercase;
-}
-h2 {
   color: #38506d;
 }
+/* h2 {
+} */
 /* h3 {
   color: #ff6000;
 } */

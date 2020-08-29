@@ -1,10 +1,10 @@
 <template>
   <v-container fluid>
     <v-layout row wrap justify-center align-center fill-height>
-      <v-flex xs12 md11 sm11 lg11>
+      <v-flex xs12 md10 sm10 lg10>
         <v-card class="pa-5 mt-3" flat>
           <v-card-title class="pt-5">
-            <h2 style="color: #38506d;">Timadoos prestige limited– Independent security advisers</h2>
+            <h2>Timadoos prestige limited– Independent security advisers</h2>
           </v-card-title>
           <v-card-subtitle class="subtitle">
             <h3>
@@ -23,11 +23,11 @@
             </p>
             <v-list-item v-for="card in cards" :key="card.title">
               <v-list-item-content>
-                <v-list-item-title>{{card.title}}</v-list-item-title>
+                <v-list-item-subtitle>{{card.title}}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
             <p>
-              Our 5+ years security experience across many diverse industries and working with hundreds of clients, enables Timadoos prestige limited
+              Our 5+ years of security experience across many diverse industries and working with hundreds of clients, enables Timadoos prestige limited
               <strong>security consultants</strong> to provide
               <strong>specialised security advice</strong> to meet the specific needs and environment of any business. Our expertise is solving complex security challenges.
             </p>
@@ -40,7 +40,7 @@
               <strong>project and project outcomes</strong>. Our individual approach and personalised attention to every project ensures that the right solution will be designed and delivered on time, to specification and within budget.
             </p>
             <p>
-              <strong>So whether you are looking for a security consultant or you just need advice,</strong>education through resources and advice is a big part of what we do, feel free to
+              <strong>So whether you are looking for a security consultant or you just need advice,</strong> education through resources and advice is a big part of what we do, feel free to
               <a
                 href="/contact/"
               >call</a> or
@@ -75,14 +75,14 @@
               </li>
               <li>
                 Unlike most other security advisories, you will only have
-                <strong> one point of contact</strong> throughout your entire project ensuring a seamless delivery process.
+                <strong>one point of contact</strong> throughout your entire project ensuring a seamless delivery process.
               </li>
             </ul>
           </v-card-subtitle>
           <!-- <v-card-actions
             style="color: #fff; margin-top: 1em;font-size: 1.35em; text-transform: uppercase;">
             <v-btn large style="background: #426288;" outlined> contact us</v-btn>
-          </v-card-actions> -->
+          </v-card-actions>-->
         </v-card>
       </v-flex>
     </v-layout>
@@ -168,12 +168,11 @@ export default {
   line-height: 1.8em;
 }
 h2 {
-    font-size: 1.4em;
-    letter-spacing: 0.01em;
-    padding: 0.7em 0 0.7em 0;
-    line-height: 1.4em;
-    font-weight: 400;
-    color: #38506d;
-
+  font-size: 1.4em;
+  letter-spacing: 0.01em;
+  padding: 0.7em 0 0.7em 0;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: #38506d;
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="bg">
     <v-layout row wrap justify-center align-center>
       <v-flex xs10 sm10 md10 lg10>
         <h2>Below are some of the areas we specialise in:</h2>
         <v-row class="fill-height text-center" align="center" justify="center">
-          <v-col md="4" sm="4" lg="4" v-for="card in cards" :key="card.title">
+          <v-col md="4" sm="4" lg="4" v-for="card in cards" :key="card.title" class="item">
             <v-card height="200" outlined tile width="600" elevation>
               <h3>{{card.title}}</h3>
 
@@ -17,27 +17,29 @@
   </v-container>
 </template>
 <style scoped>
-h2,
-h3 {
+h2{
   font-size: 1.35em;
   letter-spacing: 0.01em;
   padding: 0.7em 0 0.7em 0;
   line-height: 1.4em;
   font-weight: 400;
   text-transform: uppercase;
-}
-h2 {
   color: #38506d;
 }
 h3 {
-    color: #ff6000;
-}
-p {
-  margin: 0 0 1em 0;
-  font-size: 1.1em;
-  line-height: 1.8em;
-  font-weight: 600;
   text-transform: capitalize;
+}
+
+p {
+  color: #002155;
+  font-size: 16px;
+  font-weight: 700;
+}
+item:hover {
+  border-color: #002155;
+}
+.bg {
+  padding-bottom:50px;
 }
 </style>
 

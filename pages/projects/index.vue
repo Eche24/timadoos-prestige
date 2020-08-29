@@ -15,6 +15,13 @@ export default {
   components: {
     ProjectHero,
     WorkOn
-  },
+  }
+  ,
+   head () {
+    return {
+      title: 'Project',
+
+    }
+  }
 }
 </script>

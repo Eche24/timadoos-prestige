@@ -7,15 +7,9 @@
             <h3 style="font-size:110%" class="pb-3">Solutions</h3>
 
             <ul style="font-size:90%">
-              <li>
-                Call Center Solutions | Auto dialer | IP-PBX  
-              </li>
-              <li>
-                Conference Solutions | IVRS |Voice Logger | Toll
-              </li>
-              <li>
-                Free Handler Voice/SMS/Email Broadcasting
-              </li>
+              <li>Call Center Solutions | Auto dialer | IP-PBX</li>
+              <li>Conference Solutions | IVRS |Voice Logger | Toll</li>
+              <li>Free Handler Voice/SMS/Email Broadcasting</li>
             </ul>
           </v-col>
 
@@ -23,13 +17,13 @@
             <h3 style="font-size:110%" class="pb-3">Contact Us</h3>
             <ul style="font-size:90%">
               <li>
-                <v-icon color="grey">mdi-phone</v-icon> +2347067289623, +2347016908497
+                <v-icon color="grey">mdi-phone</v-icon>+2347067289613, +2347016908497
               </li>
               <li>
-                <v-icon color="grey">mdi-message-text</v-icon> info@timadoosprestiga.com
+                <v-icon color="grey">mdi-message-text</v-icon>contact@timadoosprestiga.com
               </li>
               <li>
-                <v-icon color="grey">mdi-map-marker</v-icon>  No.81 JS Tarka way, Makurdi, Benue State,Nigeria
+                <v-icon color="grey">mdi-map-marker</v-icon>No.81 JS Tarka way, Makurdi, Benue State,Nigeria
               </li>
             </ul>
           </v-col>
@@ -60,7 +54,10 @@
       <v-flex xs10 sm10 md10 lg10>
         <span class style="font-size:100%">
           &copy; {{ new Date().getFullYear() }}
-          <span style="color: #ff6000;">Timadoos Prestige Limited</span> All Rights
+          <span
+            style="  color: #002155;
+"
+          >Timadoos Prestige Limited</span> All Rights
           Reserved
         </span>
       </v-flex>
