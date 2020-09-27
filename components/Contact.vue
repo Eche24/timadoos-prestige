@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0" >
+  <v-container fluid class="pt-0 pb-0" >
     <v-layout row justify-center fill-height class="pt-5" align-center style="background: #426186; color:white;">
       <v-flex xs10 md5 sm5 lg5>
         <img

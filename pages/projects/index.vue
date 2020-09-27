@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pb-0 pt-0">
     <v-layout row wrap justify-center align-center>
       <v-flex xs12 md10 lg10 sm10>
         <ProjectHero />

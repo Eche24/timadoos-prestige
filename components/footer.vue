@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pt-0 pb-0">
     <v-layout row wrap justify-center align-center fill-height class="footer-bg-color">
-      <v-flex xs10 sm10 md10 lg10>
+      <v-flex xs10 sm11 md10 lg10>
         <v-row>
           <v-col cols="12" sm="4" md="4" lg="4" class="text-center">
             <h3 style="font-size:110%" class="pb-3">Solutions</h3>
@@ -20,7 +20,7 @@
                 <v-icon color="grey">mdi-phone</v-icon>+2347067289613, +2347016908497
               </li>
               <li>
-                <v-icon color="grey">mdi-message-text</v-icon>contact@timadoosprestiga.com
+                <v-icon color="grey">mdi-message-text</v-icon>contact@timadoosprestige.com
               </li>
               <li>
                 <v-icon color="grey">mdi-map-marker</v-icon>No.81 JS Tarka way, Makurdi, Benue State,Nigeria
@@ -85,7 +85,7 @@ export default {
       // },
       {
         title: 'Services',
-        src: '/service',
+        src: '/services',
       },
       {
         title: 'Projects',

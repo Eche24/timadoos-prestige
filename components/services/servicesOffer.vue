@@ -4,8 +4,8 @@
       <v-flex xs10 sm10 md10 lg10>
         <h2>Below are some of the areas we specialise in:</h2>
         <v-row class="fill-height text-center" align="center" justify="center">
-          <v-col md="4" sm="4" lg="4" v-for="card in cards" :key="card.title" class="item">
-            <v-card height="200" outlined tile width="600" elevation>
+          <v-col md="4" sm="5" lg="4" v-for="card in cards" :key="card.title" class="item">
+            <v-card height="200" class="" outlined tile width="600" elevation>
               <h3>{{card.title}}</h3>
 
               <p>{{card.info}}</p>

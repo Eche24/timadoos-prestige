@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pb-0 pt-0">
   <v-layout row justify-center align-center wrap fill-height class="bg-color pa-5">
     <v-flex xs12 md11 sm11 lg11 class="overlay">
       <!-- <v-carousel hide-delimiters cycle :show-arrows="false">
@@ -7,7 +8,7 @@
         <v-col class="text-center white--text" cols="12" style="margin-top:10%;">
           <h1
             class="text-capitalize textover"
-            style="font-size:2.5rem; font-family: 'roboto', sans-serif;"
+            style="font-size:2.5rem; font-family: 'Roboto', sans-serif;"
           >The Eagle-Eyed Protection.</h1>
           <h2
             class="textover"
@@ -16,7 +17,7 @@
           >Timadoos Prestige Limited is an independent security consultant having technical expertise in security.</h2>
           <div >
           <!-- <v-btn large > -->
-          <a href="/contact" class="hero-contact hero-contac" style="background-color: #fff;">
+          <a href="/contact" class="hero-contact" style="background-color: #fff;">
             <!-- <button> -->
             Contact us now
             <!-- </button> -->
@@ -29,6 +30,7 @@
       </v-carousel>-->
     </v-flex>
   </v-layout>
+</v-container>
 </template>
 <script>
 export default {

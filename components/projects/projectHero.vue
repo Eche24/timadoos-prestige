@@ -7,23 +7,23 @@
         <p>Our portfolio of work spans across a wide and diverse range of industries and businesses including:</p>
         <ul>
           <li>
-            <strong>Property Groups</strong>: Over the last 24 months, we have worked with 12 of the major property groups in Australia. We have performed security risk assessments and security reviews for
+            <strong>Property Groups</strong>: Over the last 24 months, we have worked with 12 of the major property groups. We have performed security risk assessments and security reviews for
             <strong>shopping centres, hospitals, financial institutions, manufacturing facilities, high-security facilities and data centres.</strong>
           </li>
           <li>
-            <strong>Commercial Buildings</strong>: To date we have reviewed over 235 commercial buildings  .
+            <strong>Commercial Buildings</strong>: To date we have reviewed over 20 commercial buildings  .
           </li>
           <li>
             <strong>Schools, Universities and Tafe’s</strong>: We have worked with many of the major educational facilities .
           </li>
           <li>
-            <strong>Data Centres</strong>: In the last 12 months we have reviewed 5 of the major data centres in Nigeria  and have overseen the security requirements for two new facilities.
+            <strong>Data Centres</strong>: In the last 12 months we have reviewed 3 of the major data centres in Nigeria  and have overseen the security requirements for two new facilities.
           </li>
           <li>
             <strong>Councils</strong>: We have consulted to over 20 councils across Nigeria.
           </li>
           <li>
-            <strong>Government Agencies</strong>: We have recently completed a review of several agencies including the Royal Australian Mint and the NSW Department of Industry.
+            <strong>Government Agencies</strong>: We have recently completed a review of several agencies .
           </li>
           <li>
             <strong>Other businesses and industries have included</strong> – Utilities, logistics, precious metal refining and social services.

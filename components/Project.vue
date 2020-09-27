@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pb-0 pt-0">
     <v-layout row justify-center align-center wrap fill-height class="pa-4 my-8">
       <v-flex xs10 md10 sm10 lg10>
         <h2>projects</h2>
@@ -10,7 +10,8 @@
               <h4 class="pt-3">Client: {{card.title}}</h4>
 
               <P>
-                <strong>Services:</strong> Security risk management, security design
+                <strong>Services:</strong>
+                {{card.services}}
               </P>
             </v-card>
           </v-col>
@@ -28,24 +29,30 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Archtik Group',
+        title: 'APIN Health Initiative',
         src:
-          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872014/timadoos/timadoos-project_b0sv3x.png',
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598956040/timadoos/timadoos-3_sfbhlt.jpg',
+        services: 'Internet Newtorking,security design',
       },
       {
         title: 'Benysta Micro financial bank',
         src:
-          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872209/timadoos/timadoos-project1_iuq9ys.png',
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598837709/timadoos/timadoos-project1_aklzim.jpg',
+        services:
+          'Solar Panel Installation, Security risk management, security design',
       },
       {
-        title: 'BIPC group',
+        title: 'BIPC Group',
         src:
           'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872405/timadoos/timadoos-project2_z7jog3.png',
+        services: 'Security risk management, security design',
       },
       {
-        title: 'Salcorn concept limited',
+        title: ' Archtik Consultant',
         src:
-          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872582/timadoos/project-3_wl8zzo.png',
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598836768/timadoos/timadoos-3_xdhhox.png',
+        services:
+          'CCTV Installation, Security risk management, security design',
       },
     ],
   }),

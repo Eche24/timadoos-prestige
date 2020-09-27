@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid class="bg">
-    <v-layout row justify-center fill-height class="pt-5" align-center>
+  <v-container fluid class="pb-0 pt-0">
+    <v-layout row justify-center fill-height class="pt-5 " align-center>
       <v-flex xs10 md10 sm10 lg10>
         <h1>Our Security Consulting Services</h1>
         <p>We provide security solutions that suit your specific needs and business environment and advise on the best technical and operational systems required to achieve your overall objectives.</p>

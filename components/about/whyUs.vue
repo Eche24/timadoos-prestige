@@ -4,15 +4,15 @@
       <v-flex xs12 md10 sm10 lg10>
         <v-card class="pa-5 mt-3" flat>
           <v-card-title class="pt-5">
-            <h2>Timadoos prestige limited– Independent security advisers</h2>
+            <h1>Timadoos prestige limited– Independent security advisers</h1>
           </v-card-title>
           <v-card-subtitle class="subtitle">
-            <h3>
+            <h2>
               <span style="color: #003366;">
                 If the safety and security of your people and property is important to you, then you need to find the right people to advise you.
                 And&nbsp;if you are just starting out, you might not know where to go for help. &nbsp;We can point you in the right direction.
               </span>
-            </h3>
+            </h2>
           </v-card-subtitle>
           <v-card-text class="text">
             <p>
@@ -150,16 +150,16 @@ export default {
 </script>
 
 <style scoped>
-.subtitle h3 {
+/* .subtitle h3 {
   font-size: 1.3em;
   letter-spacing: 0.01em;
   padding: 0.7em 0 0.9em 0;
   line-height: 1.4em;
   font-weight: 400;
-}
+} */
 .text p {
   margin: 0 0 1em 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.8em;
 }
 .content-list li {
@@ -167,12 +167,16 @@ export default {
   font-size: 1.15em;
   line-height: 1.8em;
 }
+h1 {
+  font-weight: 700;
+  font-size: 29px;
+  color: #003366;
+  text-transform: capitalize;
+}
 h2 {
-  font-size: 1.4em;
-  letter-spacing: 0.01em;
-  padding: 0.7em 0 0.7em 0;
-  line-height: 1.4em;
-  font-weight: 400;
-  color: #38506d;
+  margin-bottom: 10px;
+  padding-bottom: 1px;
+  color: #3e4141;
+  font-size: 24px;
 }
 </style>

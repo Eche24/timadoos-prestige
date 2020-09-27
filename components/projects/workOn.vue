@@ -3,14 +3,15 @@
     <v-layout row wrap justify-center align-center>
       <v-flex xs10 sm10 md10 lg10>
         <h2>Below are examples of some of our most recent work:</h2>
-       <v-row>
+        <v-row>
           <v-col cols="12" sm="6" md="6" v-for="card in cards" :key="card.title">
-            <v-card class="pa-2 mx-auto" flat max-width="440">
+            <v-card class="pa-3 mx-auto" flat max-width="440">
               <v-img :src="card.src" height="200px"></v-img>
               <h4 class="pt-3">Client: {{card.title}}</h4>
 
               <P>
-                <strong>Services:</strong> Security risk management, security design
+                <strong>Services:</strong>
+                {{card.services}}
               </P>
             </v-card>
           </v-col>
@@ -20,7 +21,7 @@
   </v-container>
 </template>
 <style scoped>
-h2{
+h2 {
   font-size: 1.35em;
   letter-spacing: 0.01em;
   padding: 0.7em 0 0.7em 0;
@@ -54,24 +55,37 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Archtik Group',
+        title: 'APIN Health Initiative',
         src:
-          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872014/timadoos/timadoos-project_b0sv3x.png',
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598956040/timadoos/timadoos-3_sfbhlt.jpg',
+        services: 'Internet Newtorking,security design',
       },
       {
         title: 'Benysta Micro financial bank',
         src:
-          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872209/timadoos/timadoos-project1_iuq9ys.png',
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598837709/timadoos/timadoos-project1_aklzim.jpg',
+        services:
+          'Solar Panel Installation, Security risk management, security design',
       },
       {
-        title: 'BIPC group',
+        title: 'BIPC Group',
         src:
           'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872405/timadoos/timadoos-project2_z7jog3.png',
+        services: 'Security risk management, security design',
+      },
+      {
+        title: ' Archtik Consultant',
+        src:
+          'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598836768/timadoos/timadoos-3_xdhhox.png',
+        services:
+          'CCTV Installation, Security risk management, security design',
       },
       {
         title: 'Salcorn concept limited',
         src:
           'https://res.cloudinary.com/ds4yhjjq8/image/upload/v1597872582/timadoos/project-3_wl8zzo.png',
+        services:
+          'Solar Panel Installation Security risk management, security design',
       },
     ],
   }),

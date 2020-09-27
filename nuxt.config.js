@@ -26,6 +26,12 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      {
+        name: 'Timadoos Prestige Limited',
+        description:
+          'Timadoos Prestige Limited is an independent security consulting firm having technical expertise in security.',
+        author: 'frospace',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -37,7 +43,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/firebase.js'],
+  plugins: [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -50,7 +56,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    'vue-sweetalert2/nuxt',
+    
+  ],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

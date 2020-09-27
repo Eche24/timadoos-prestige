@@ -9,9 +9,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "firebase": "^7.19.0",
+    "emailjs-com": "^2.6.3",
     "nuxt": "^2.14.0",
-    "vue-server-renderer": "^2.6.11"
+    "vue-server-renderer": "^2.6.11",
+    "vue-sweetalert2": "^3.0.8"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",

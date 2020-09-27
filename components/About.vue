@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pt-0 pb-0">
     <v-layout row justify-center align-center fill-height wrap class="pa-4 my-5">
       <v-flex xs11 md10 lg10 sm10>
         <v-row>
@@ -7,8 +7,8 @@
             <v-card flat max-width="700">
               <h2 class="pa-2">about us</h2>
               <v-card-text>
-                <h3 style="color: #38506d;">Timadoos Prestige limited– Independent security advisers</h3>
                 <p>
+                <strong> Timadoos Prestige limited Independent security advisers.</strong>
                   If the safety and security of your people and property is important to you, then you need to find the right people to advise you.
                   And&nbsp;if you are just starting out, you might not know where to go for help. &nbsp;We can point you in the right direction.
                 </p>
@@ -18,7 +18,7 @@
               </v-card-actions>
             </v-card>
           </v-col>
-          <v-col cols="11" md="6">
+          <v-col cols="11" md="6" class="mx-auto">
             <v-img
               src="https://res.cloudinary.com/ds4yhjjq8/image/upload/v1598481038/timadoos/IMG-20200219-WA0056_h1xurm.png"
               height="300px"

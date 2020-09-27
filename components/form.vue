@@ -5,50 +5,48 @@
       Please feel free to talk to us if you have any questions.
       <br />We endeavour to answer within 24 hours
     </p>
-
-    <v-card flat style="color: #506675; background: #fff;" max-width="400" class="mx-auto pt-3">
-      <v-alert type="success" class="alert" v-model="alert">your message has been sent</v-alert>
+    <v-card
+      outlined
+      tile
+      style="color: #506675; background: #fff;"
+      max-width="400"
+      class="mx-auto pt-3"
+    >
       <v-card-text>
-        <v-form class="px-3" ref="form">
-          <v-text-field label="Name" v-model="name" :rules="inputRules" outlined color="blue"></v-text-field>
-
-          <v-text-field label="E-mail" v-model="email" :rules="emailRules" outlined color="blue"></v-text-field>
-          <v-textarea label="Message" v-model="message" :rules="inputRules" outlined color="blue"></v-textarea>
+        <v-form class="contact-form" ref="form" @submit.prevent="sendEmail">
+          <v-text-field label="Name" :rules="inputRules" outlined color="blue" name="user_name"></v-text-field>
+          <v-text-field label="Email" :rules="emailRules" outlined color="blue" name="user_email"></v-text-field>
+          <v-textarea label="Message" :rules="inputRules" outlined color="blue" name="message"></v-textarea>
           <div class="text-center">
             <v-btn
               class="pa-4"
-              color
-              @click="submit"
               large
               text
               style="
                 background-color: #10508d;
-                font-size: 12px;
                 line-height: 1;
+                color: #fff;
+                font-size: 12px;
               "
-            >
-              <span class>
-                <a style="color: #fff; text-transform: lowercase;">Send message</a>
-              </span>
-            </v-btn>
+              outlined
+              type="submit"
+            >send message</v-btn>
           </div>
         </v-form>
       </v-card-text>
     </v-card>
   </div>
 </template>
+
 <script>
-import { fireDb } from '@/plugins/firebase.js'
+import emailjs from 'emailjs-com'
+
 export default {
   data() {
     return {
-      alert: false,
-      name: '',
-      message: '',
       inputRules: [
-        (v) => (v && v.length >= 3) || 'minimum length is 3 characters',
+        (v) => (v && v.length >= 2) || 'minimum length is 2 characters',
       ],
-      email: '',
       emailRules: [
         (v) => !!v || 'E-mail is required',
         (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
@@ -56,28 +54,37 @@ export default {
     }
   },
   methods: {
-    submit(e) {
+    sendEmail(e) {
       e.preventDefault()
-
       if (this.$refs.form.validate()) {
-        this.alert = true
-        const info = {
-          name: this.name,
-          email: this.email,
-          message: this.message,
-          date: new Date(),
-        }
-
-        fireDb
-          .collection('info')
-          .add(info)
-          .then(() => {
-            setTimeout(() => {
-              this.alert = false
-            }, 1000)
-
-            this.$refs.form.reset()
-          })
+        emailjs
+          .sendForm(
+            'mail_smtp_server',
+            'template_ywbob22',
+            e.target,
+            'user_7ajDmDNTguP77GrIyupW3'
+          )
+          .then(
+            (result) => {
+              console.log('SUCCESS!', result.status, result.text)
+              this.$swal({
+                icon: 'success',
+                title: 'Message sent',
+                showConfirmButton: false,
+                timer: 2000,
+              })
+            },
+            (error) => {
+              console.log('FAILED...', error)
+              this.$swal({
+                icon: 'warning',
+                title: 'Message error',
+                showConfirmButton: false,
+                timer: 2000,
+              })
+            }
+          )
+        this.$refs.form.reset()
       }
     },
   },

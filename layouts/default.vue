@@ -1,15 +1,10 @@
 <template>
   <v-app>
-   <Nav />
-    <v-main class="pa-0">
-      <!-- <v-container fluid> -->
+   <Nav/>
+    <v-main class="">
         <nuxt />
-      <!-- </v-container> -->
     </v-main>
-    <!-- <v-divider/> -->
-    <!-- <v-container fluid  class=""> -->
     <Contact  />
-    <!-- </v-container> -->
     <Footer />
   </v-app>
 </template>
