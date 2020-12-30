@@ -55,7 +55,6 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      e.preventDefault()
       if (this.$refs.form.validate()) {
         emailjs
           .sendForm(
